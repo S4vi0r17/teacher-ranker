@@ -76,3 +76,23 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.animated-input {
+  position: relative;
+}
+
+.animated-input::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ff9254;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.animated-input:focus-within::after {
+  width: 100%;
+  left: 0;
+}
