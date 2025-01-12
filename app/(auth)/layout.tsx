@@ -24,6 +24,7 @@ export default function AuthLayout({
               width={240}
               height={240}
               className="rounded-full"
+              priority={true}
             />
           </div>
           <h1 className="text-[#FFA54E] text-3xl font-bold mb-4">

@@ -49,7 +49,7 @@ export default function SignUpPage() {
               className="absolute right-3 top-1/2 -translate-y-1/2 flex flex-col items-center -mt-1"
               aria-label="User options"
             >
-              <Image src={`/dice.svg`} alt="" width={24} height={24} />
+              <Image src={`/gru.svg`} alt="" width={24} height={24} className='animate-spin' />
               <p className="text-xs text-[#FFA54E] -mt-1">¿Sin ideas?</p>
             </button>
           </div>
