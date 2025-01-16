@@ -35,8 +35,8 @@ export default function AuthLayout({
 
       <div className="container mx-auto px-4 py-8 min-h-screen flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-48">
         {/* Left side - Logo and tagline */}
-        <div className="text-center lg:text-left flex flex-col items-center animate-move-up delay-[0.1s]">
-          <div className="mx-auto lg:mx-0 w-48 h-48 rounded-full bg-[rgba(188,107,242,0.16)] flex items-center justify-center mb-6">
+        <div className="text-center lg:text-left flex flex-col items-center">
+          <div className="mx-auto lg:mx-0 w-48 h-48 rounded-full bg-[rgba(188,107,242,0.16)] flex items-center justify-center mb-6 animate-fade-in-scale">
             <Image
               src={`/teacher-ranker-logo.svg`}
               alt="Teacher Ranker Logo"
@@ -46,10 +46,10 @@ export default function AuthLayout({
               priority={true}
             />
           </div>
-          <h1 className="text-[#FFA54E] text-3xl font-bold mb-4">
+          <h1 className="text-[#FFA54E] text-3xl font-bold mb-4 animate-slide-in-from-left">
             Teacher Ranker
           </h1>
-          <p className="text-[#BC6BF2] opacity-75 text-xl max-w-md font-semibold text-center mt-10">
+          <p className="text-[#BC6BF2] opacity-75 text-xl max-w-md font-semibold text-center mt-10 animate-slide-in-from-bottom">
             Califica a tus profesores, mejora tu aprendizaje
           </p>
         </div>

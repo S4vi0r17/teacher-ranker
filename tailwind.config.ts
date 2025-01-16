@@ -68,20 +68,53 @@ const config: Config = {
           transform: 'translate(var(--tw-translate-x), var(--tw-translate-y))',
         },
       },
-	  moveUp: {
-		'0%': {
-		  transform: 'translateY(50px)',
-		  opacity: '0',
-		},
-		'100%': {
-		  transform: 'translateY(0)',
-		  opacity: '1',
-		},
-	  },
+      moveUp: {
+        '0%': {
+          transform: 'translateY(50px)',
+          opacity: '0',
+        },
+        '100%': {
+          transform: 'translateY(0)',
+          opacity: '1',
+        },
+      },
+      fadeInScale: {
+        '0%': {
+          opacity: '0',
+          transform: 'scale(0.8)',
+        },
+        '100%': {
+          opacity: '1',
+          transform: 'scale(1)',
+        },
+      },
+      slideInFromLeft: {
+        '0%': {
+          transform: 'translateX(-50px)',
+          opacity: '0',
+        },
+        '100%': {
+          transform: 'translateX(0)',
+          opacity: '1',
+        },
+      },
+      slideInFromBottom: {
+        '0%': {
+          transform: 'translateY(20px)',
+          opacity: '0',
+        },
+        '100%': {
+          transform: 'translateY(0)',
+          opacity: '1',
+        },
+      },
     },
     animation: {
       'move-bg': 'moveToPosition 1.5s ease-out forwards',
-	  'move-up': 'moveUp 1s ease-out forwards',
+      'move-up': 'moveUp 1s ease-out forwards',
+      'fade-in-scale': 'fadeInScale 0.6s ease-out forwards',
+      'slide-in-from-left': 'slideInFromLeft 0.6s ease-out forwards',
+      'slide-in-from-bottom': 'slideInFromBottom 1s ease-out forwards',
     },
   },
   plugins: [tailwindcssAnimate],
